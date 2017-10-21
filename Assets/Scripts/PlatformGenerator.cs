@@ -24,6 +24,9 @@ public class PlatformGenerator : MonoBehaviour {
 	private float minHeight;
 	private float maxHeight;
 
+	private CoinGenerator theCoinGenerator;
+	public float randomCoinTreshold;
+
 	// Use this for initialization
 	void Start () {
 		//platformWidth = thePlatform.GetComponent<BoxCollider2D> ().size.x;
@@ -36,6 +39,8 @@ public class PlatformGenerator : MonoBehaviour {
 		// altura minima será o centro da primeira plataforma
 		minHeight = transform.position.y;
 		maxHeight = maxHeightPoint.position.y;
+
+		theCoinGenerator = FindObjectOfType<CoinGenerator> ();
 
 	}
 	
@@ -66,6 +71,10 @@ public class PlatformGenerator : MonoBehaviour {
 			newPlatform.transform.position = transform.position;
 			newPlatform.transform.rotation = transform.rotation;
 			newPlatform.SetActive (true);
+
+			if (Random.Range (0f, 100f) < randomCoinTreshold) {
+				theCoinGenerator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1f, transform.position.z));
+			}
 
 			transform.position = new Vector3 (transform.position.x + (platformWidths[platformSelector] / 2), heightChange, transform.position.z);
 

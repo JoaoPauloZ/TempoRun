@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
 	public PlayerController thePlayer;
 	private Vector3 playerStartPoint;
 
-	private PlatformDestroyer[] platformList;
+	private ObjectDestroyer[] platformList;
 
 	private ScoreManager theScoreManager;
 
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour {
 
 		yield return new WaitForSeconds (0.5f);
 
-		platformList = FindObjectsOfType <PlatformDestroyer>();
+		platformList = FindObjectsOfType <ObjectDestroyer>();
 		for (int i = 0; i < platformList.Length; i++) {
 			platformList [i].gameObject.SetActive (false);
 		}

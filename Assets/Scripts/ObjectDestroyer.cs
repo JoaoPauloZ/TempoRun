@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformDestroyer : MonoBehaviour {
+public class ObjectDestroyer : MonoBehaviour {
 
-	public GameObject platformDestructionPoint;
+	private GameObject platformDestructionPoint;
 
 	// Use this for initialization
 	void Start () {
