@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 	private ObjectDestroyer[] platformList;
 
 	private ScoreManager theScoreManager;
+	private BackgroundManager theBackgroundManager;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour {
 		playerStartPoint = thePlayer.transform.position;
 
 		theScoreManager = FindObjectOfType<ScoreManager> ();
+		theBackgroundManager = FindObjectOfType<BackgroundManager> ();
 	}
 	
 	// Update is called once per frame
@@ -51,6 +53,8 @@ public class GameManager : MonoBehaviour {
 
 		theScoreManager.scoreCount = 0;
 		theScoreManager.scoreIncreasing = true;
+
+		theBackgroundManager.RestartBackgroundPosition ();
 	}
 
 }
