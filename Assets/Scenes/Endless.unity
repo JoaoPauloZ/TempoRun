@@ -967,7 +967,7 @@ Prefab:
     - target: {fileID: 114008106492790374, guid: d0f3ea9f2f015b4419d3a63dd04d858e,
         type: 2}
       propertyPath: backgraundWidth
-      value: 19.43
+      value: 19.44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0f3ea9f2f015b4419d3a63dd04d858e, type: 2}
@@ -1916,11 +1916,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4977393303155102, guid: 3730d3ef62f66da42a5cfa304cea99bc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.22
+      value: -7.165
       objectReference: {fileID: 0}
     - target: {fileID: 4977393303155102, guid: 3730d3ef62f66da42a5cfa304cea99bc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.14
+      value: -3.094
       objectReference: {fileID: 0}
     - target: {fileID: 4977393303155102, guid: 3730d3ef62f66da42a5cfa304cea99bc, type: 2}
       propertyPath: m_LocalPosition.z
