@@ -208,7 +208,7 @@ MonoBehaviour:
   secondBackground: {fileID: 4540543126068284}
   thirdBackground: {fileID: 4633501916750222}
   thePlayer: {fileID: 0}
-  backgraundWidth: 19.43
+  backgraundWidth: 19.44
 --- !u!212 &212015362851956280
 SpriteRenderer:
   m_ObjectHideFlags: 1

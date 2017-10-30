@@ -73,7 +73,7 @@ public class PlatformGenerator : MonoBehaviour {
 			newPlatform.SetActive (true);
 
 			if (Random.Range (0f, 100f) < randomCoinTreshold) {
-				theCoinGenerator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1f, transform.position.z));
+				theCoinGenerator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1.5f, transform.position.z));
 			}
 
 			transform.position = new Vector3 (transform.position.x + (platformWidths[platformSelector] / 2), heightChange, transform.position.z);
