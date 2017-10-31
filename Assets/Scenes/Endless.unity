@@ -271,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformGenerator: {fileID: 1097497143}
   thePlayer: {fileID: 1573057766}
+  increaseScoreByTime: 0
 --- !u!4 &508997681
 Transform:
   m_ObjectHideFlags: 0

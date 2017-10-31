@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
 	private Vector3 platformStartPoint;
 
 	public PlayerController thePlayer;
+	public bool increaseScoreByTime;
+
 	private Vector3 playerStartPoint;
 
 	private ObjectDestroyer[] platformList;
@@ -22,6 +24,8 @@ public class GameManager : MonoBehaviour {
 
 		theScoreManager = FindObjectOfType<ScoreManager> ();
 		theBackgroundManager = FindObjectOfType<BackgroundManager> ();
+
+		theScoreManager.scoreIncreasing = increaseScoreByTime;
 	}
 	
 	// Update is called once per frame
@@ -36,8 +40,11 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public IEnumerator RestartGameCo() {
-		
-		theScoreManager.scoreIncreasing = false;
+
+		if (increaseScoreByTime) {
+			theScoreManager.scoreIncreasing = false;
+		}
+
 		thePlayer.gameObject.SetActive (false);
 
 		yield return new WaitForSeconds (0.5f);
@@ -52,7 +59,10 @@ public class GameManager : MonoBehaviour {
 		thePlayer.gameObject.SetActive (true);
 
 		theScoreManager.scoreCount = 0;
-		theScoreManager.scoreIncreasing = true;
+
+		if (increaseScoreByTime) {
+			theScoreManager.scoreIncreasing = true;
+		}
 
 		theBackgroundManager.RestartBackgroundPosition ();
 	}
