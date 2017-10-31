@@ -1152,6 +1152,21 @@ Prefab:
       propertyPath: theGameManager
       value: 
       objectReference: {fileID: 508997680}
+    - target: {fileID: 114972952260612388, guid: 3730d3ef62f66da42a5cfa304cea99bc,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972952260612388, guid: 3730d3ef62f66da42a5cfa304cea99bc,
+        type: 2}
+      propertyPath: speedIncreaseMilestone
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972952260612388, guid: 3730d3ef62f66da42a5cfa304cea99bc,
+        type: 2}
+      propertyPath: speedMultiplier
+      value: 1.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3730d3ef62f66da42a5cfa304cea99bc, type: 2}
   m_IsPrefabParent: 0
