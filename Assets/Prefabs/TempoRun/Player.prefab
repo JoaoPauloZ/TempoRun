@@ -146,9 +146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26571bad076aadf489a6a22013ffd3fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 5
   speedMultiplier: 1.05
-  speedIncreaseMilestone: 50
+  speedIncreaseMilestone: 25
   jumpForce: 12
   jumpTime: 0.25
   grounded: 0
