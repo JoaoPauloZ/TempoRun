@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
 	private Vector3 platformStartPoint;
 
 	public PlayerController thePlayer;
+	public DeathMenu theDeathScreen;
+
 	public bool increaseScoreByTime;
 
 	private Vector3 playerStartPoint;
@@ -26,14 +28,45 @@ public class GameManager : MonoBehaviour {
 		theBackgroundManager = FindObjectOfType<BackgroundManager> ();
 
 		theScoreManager.scoreIncreasing = increaseScoreByTime;
+
+		theDeathScreen.gameObject.SetActive (false);
+
 	}
 
 	public void RestartGame() {
+		if (increaseScoreByTime) {
+			theScoreManager.scoreIncreasing = false;
+		}
 
-		StartCoroutine ("RestartGameCo");
+		thePlayer.gameObject.SetActive (false);
 
+		theDeathScreen.gameObject.SetActive (true);
+
+		//StartCoroutine ("RestartGameCo");
 	}
 
+	public void Reset() {
+		theDeathScreen.gameObject.SetActive (false);
+
+		platformList = FindObjectsOfType <ObjectDestroyer>();
+		for (int i = 0; i < platformList.Length; i++) {
+			platformList [i].gameObject.SetActive (false);
+		}
+
+		platformGenerator.position = platformStartPoint;
+		thePlayer.transform.position = playerStartPoint;
+		thePlayer.gameObject.SetActive (true);
+
+		theScoreManager.scoreCount = 0;
+
+		if (increaseScoreByTime) {
+			theScoreManager.scoreIncreasing = true;
+		}
+
+		theBackgroundManager.RestartBackgroundPosition ();
+	}
+
+	/*
 	public IEnumerator RestartGameCo() {
 
 		if (increaseScoreByTime) {
@@ -61,5 +94,6 @@ public class GameManager : MonoBehaviour {
 
 		theBackgroundManager.RestartBackgroundPosition ();
 	}
+	*/
 
 }

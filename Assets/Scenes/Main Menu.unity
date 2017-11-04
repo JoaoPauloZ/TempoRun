@@ -304,7 +304,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -16, y: 0}
+  m_SizeDelta: {x: -30, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &551077212
 MonoBehaviour:
@@ -330,15 +330,15 @@ MonoBehaviour:
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 1
-    m_MaxSize: 86
+    m_MinSize: 18
+    m_MaxSize: 85
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit Game
+  m_Text: SAIR
 --- !u!222 &551077213
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 594100419}
   - component: {fileID: 594100418}
   m_Layer: 5
-  m_Name: Play Button
+  m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,10 +377,10 @@ RectTransform:
   m_Father: {fileID: 2022659402}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2832215, y: 0.32500002}
-  m_AnchorMax: {x: 0.7167036, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015258789, y: 3}
-  m_SizeDelta: {x: 1, y: -3}
+  m_AnchorMin: {x: 0.33429644, y: 0.26700002}
+  m_AnchorMax: {x: 0.6675928, y: 0.43645453}
+  m_AnchoredPosition: {x: 0, y: -6}
+  m_SizeDelta: {x: 0, y: 6}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &594100418
 MonoBehaviour:
@@ -568,7 +568,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -16, y: 0}
+  m_SizeDelta: {x: -30, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1064566360
 MonoBehaviour:
@@ -594,15 +594,15 @@ MonoBehaviour:
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 86
+    m_MinSize: 18
+    m_MaxSize: 85
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Game
+  m_Text: INICIAR
 --- !u!222 &1064566361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 1209079695}
   - component: {fileID: 1209079694}
   m_Layer: 5
-  m_Name: Quit Button
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,10 +641,10 @@ RectTransform:
   m_Father: {fileID: 2022659402}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2832215, y: 0.076000005}
-  m_AnchorMax: {x: 0.7167036, y: 0.23600002}
-  m_AnchoredPosition: {x: 0.49998, y: 23}
-  m_SizeDelta: {x: 1, y: 2}
+  m_AnchorMin: {x: 0.33429644, y: 0.027272727}
+  m_AnchorMax: {x: 0.6675928, y: 0.21245457}
+  m_AnchoredPosition: {x: 0.2760315, y: 0}
+  m_SizeDelta: {x: 1.0900002, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209079694
 MonoBehaviour:
