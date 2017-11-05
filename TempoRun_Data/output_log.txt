@@ -19,23 +19,17 @@ Platform assembly: D:\Projetos Unity\TempoRun\TempoRun_Data\Managed\UnityEngine.
 Loading D:\Projetos Unity\TempoRun\TempoRun_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
 Platform assembly: D:\Projetos Unity\TempoRun\TempoRun_Data\Managed\System.dll (this message is harmless)
 Platform assembly: D:\Projetos Unity\TempoRun\TempoRun_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.258 seconds
+- Completed reload, in  0.034 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.981290 ms
+UnloadTime: 1.409680 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.172513 ms
+UnloadTime: 7.393816 ms
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 502.
-Total: 0.311069 ms (FindLiveObjects: 0.043818 ms CreateObjectMapping: 0.015790 ms MarkObjects: 0.236460 ms  DeleteObjects: 0.014606 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.682141 ms
-
-Unloading 106 unused Assets to reduce memory usage. Loaded Objects now: 316.
-Total: 0.313437 ms (FindLiveObjects: 0.030396 ms CreateObjectMapping: 0.014211 ms MarkObjects: 0.183562 ms  DeleteObjects: 0.084478 ms)
+Total: 0.320543 ms (FindLiveObjects: 0.045397 ms CreateObjectMapping: 0.018948 ms MarkObjects: 0.241197 ms  DeleteObjects: 0.014211 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2e34 -> priority: 1 
-  Thread -> id: 2bc8 -> priority: 1 
+  Thread -> id: 2fc0 -> priority: 1 
+  Thread -> id: 2c24 -> priority: 1 
