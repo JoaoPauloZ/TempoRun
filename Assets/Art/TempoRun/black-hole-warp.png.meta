@@ -1,0 +1,630 @@
+fileFormatVersion: 2
+guid: 408e0450f7ddd4b448919f2b18fc79b8
+timeCreated: 1509885098
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: black-hole-warp_0
+    21300002: black-hole-warp_1
+    21300004: black-hole-warp_2
+    21300006: black-hole-warp_3
+    21300008: black-hole-warp_4
+    21300010: black-hole-warp_5
+    21300012: black-hole-warp_6
+    21300014: black-hole-warp_7
+    21300016: black-hole-warp_8
+    21300018: black-hole-warp_9
+    21300020: black-hole-warp_10
+    21300022: black-hole-warp_11
+    21300024: black-hole-warp_12
+    21300026: black-hole-warp_13
+    21300028: black-hole-warp_14
+    21300030: black-hole-warp_15
+    21300032: black-hole-warp_16
+    21300034: black-hole-warp_17
+    21300036: black-hole-warp_18
+    21300038: black-hole-warp_19
+    21300040: black-hole-warp_20
+    21300042: black-hole-warp_21
+    21300044: black-hole-warp_22
+    21300046: black-hole-warp_23
+    21300048: black-hole-warp_24
+    21300050: black-hole-warp_25
+    21300052: black-hole-warp_26
+    21300054: black-hole-warp_27
+    21300056: black-hole-warp_28
+    21300058: black-hole-warp_29
+    21300060: black-hole-warp_30
+    21300062: black-hole-warp_31
+    21300064: black-hole-warp_32
+    21300066: black-hole-warp_33
+    21300068: black-hole-warp_34
+    21300070: black-hole-warp_35
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 128
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: black-hole-warp_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2586
+        width: 482
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_1
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 2606
+        width: 476
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_2
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 2615
+        width: 433
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_3
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 2605
+        width: 453
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_4
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 2622
+        width: 479
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_5
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 2615
+        width: 392
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2097
+        width: 432
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_7
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 2085
+        width: 391
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_8
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 2108
+        width: 407
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_9
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 2118
+        width: 416
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_10
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 2088
+        width: 452
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_11
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 2081
+        width: 412
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_12
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1592
+        width: 357
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_13
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1641
+        width: 324
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_14
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1644
+        width: 295
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_15
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1658
+        width: 255
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_16
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1683
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_17
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 1710
+        width: 168
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_18
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1212
+        width: 133
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_19
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1225
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_20
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1242
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_21
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 1255
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_22
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 1259
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_23
+      rect:
+        serializedVersion: 2
+        x: 2806
+        y: 1266
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_24
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 761
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_25
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 762
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_26
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 755
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_27
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 730
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_28
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 714
+        width: 101
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_29
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 701
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_30
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 174
+        width: 169
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_31
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 147
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_32
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 122
+        width: 255
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_33
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 105
+        width: 326
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_34
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 56
+        width: 358
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: black-hole-warp_35
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 32
+        width: 412
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
