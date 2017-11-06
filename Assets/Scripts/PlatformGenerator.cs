@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlatformGenerator : MonoBehaviour {
 
+	public GameObject thePortal;
 	public GameObject thePlatform;
 	public Transform generationPoint;
 	public float distanceBetweenMin;
@@ -27,6 +28,9 @@ public class PlatformGenerator : MonoBehaviour {
 	private CoinGenerator theCoinGenerator;
 	public float randomCoinTreshold;
 
+	//private GameObject theRealPortal;
+	private ScoreManager theScoreManager;
+
 	// Use this for initialization
 	void Start () {
 		//platformWidth = thePlatform.GetComponent<BoxCollider2D> ().size.x;
@@ -41,6 +45,8 @@ public class PlatformGenerator : MonoBehaviour {
 		maxHeight = maxHeightPoint.position.y;
 
 		theCoinGenerator = FindObjectOfType<CoinGenerator> ();
+
+		theScoreManager = FindObjectOfType<ScoreManager> ();
 
 	}
 	
@@ -65,7 +71,6 @@ public class PlatformGenerator : MonoBehaviour {
 
 			//Instantiate (thePlatforms[platformSelector], transform.position, transform.rotation);
 
-
 			GameObject newPlatform = theObjectPools[platformSelector].GetPooledObject ();
 
 			newPlatform.transform.position = transform.position;
@@ -74,6 +79,11 @@ public class PlatformGenerator : MonoBehaviour {
 
 			if (Random.Range (0f, 100f) < randomCoinTreshold) {
 				theCoinGenerator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1.5f, transform.position.z));
+			}
+
+			if (theScoreManager.darkMatterCount >= theScoreManager.darkMatterMax && !thePortal.activeInHierarchy) {
+				thePortal.transform.position = new Vector3 (newPlatform.transform.position.x, newPlatform.transform.position.y + 2.5f, 0);
+				thePortal.SetActive (true);
 			}
 
 			transform.position = new Vector3 (transform.position.x + (platformWidths[platformSelector] / 2), heightChange, transform.position.z);

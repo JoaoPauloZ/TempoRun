@@ -12,11 +12,6 @@ public class PickUpPoints : MonoBehaviour {
 	void Start () {
 		theScoreManager = FindObjectOfType<ScoreManager> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.name == "Player") {

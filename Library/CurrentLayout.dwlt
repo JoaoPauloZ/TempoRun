@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 140
+  controlID: 65
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 32
+  controlID: 12
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -391,14 +391,14 @@ MonoBehaviour:
     width: 733
     height: 326
   m_SceneLighting: 1
-  lastFramingTime: 2382.4784691129553
+  lastFramingTime: 9746.90334549451
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.67, y: -1.45, z: 0}
+    m_Target: {x: -3.22, y: 0.110000014, z: 0}
     speed: 2
-    m_Value: {x: -3.67, y: -1.45, z: 0}
+    m_Value: {x: -3.22, y: 0.110000014, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -425,9 +425,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.095199
+    m_Target: 6.272097
     speed: 2
-    m_Value: 12.095199
+    m_Value: 6.272097
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -463,7 +463,7 @@ MonoBehaviour:
     x: 0
     y: 92
     width: 733
-    height: 342
+    height: 326
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -552,10 +552,10 @@ MonoBehaviour:
     - {x: 389.80002, y: 188.20001}
     - {x: 376.00003, y: 183.40001}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: d8cccec79ac4fdb489557089b1ec7bf9,
+  m_AnimatorController: {fileID: 9100000, guid: b2873ffd2de117d428863f4ed77aae2a,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107783223733015106, guid: d8cccec79ac4fdb489557089b1ec7bf9,
+  - m_Target: {fileID: 1107983508272050842, guid: b2873ffd2de117d428863f4ed77aae2a,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -598,21 +598,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 1afcffff00000000
+    m_ExpandedIDs: 10a2f7ff9ca2f7ffa0a3f7ffa6a3f7ff7a98feff74a7feff3ca8feff44a9feff4ea9feff1afcffff00000000f0280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Portal
+      m_OriginalName: Portal
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -384606
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -659,19 +659,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs/TempoRun
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 41
   m_LastFolders:
-  - Assets/Prefabs/TempoRun
+  - Assets/Scripts
   m_LastFoldersGridSize: 41
   m_LastProjectPath: D:\Projetos Unity\TempoRun
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00280000
-    m_LastClickedID: 10240
-    m_ExpandedIDs: 0000000022260000c2270000cc270000e4270000ffffff7f
+    m_SelectedIDs: 80260000
+    m_LastClickedID: 9856
+    m_ExpandedIDs: 0000000022260000cc270000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -726,7 +726,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 8026000078270000ce27000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -751,7 +751,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 32}
     m_GridSize: 41
   m_DirectoriesAreaWidth: 110
 --- !u!114 &21

@@ -8,8 +8,11 @@ public class ScoreManager : MonoBehaviour {
 	public Text scoreText;
 	public Text highScoreText;
 
-	public float scoreCount;
-	public float highScoreCount;
+	public float darkMatterCount;
+	public float darkMatterMax;
+
+	public float distanceCount;
+	public float highDistanceCount;
 
 	public float pointsPerSecond;
 
@@ -18,7 +21,7 @@ public class ScoreManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if (PlayerPrefs.HasKey("HighScore")) {
-			highScoreCount = PlayerPrefs.GetFloat ("HighScore");
+			highDistanceCount = PlayerPrefs.GetFloat ("HighScore");
 		}
 	}
 	
@@ -26,21 +29,21 @@ public class ScoreManager : MonoBehaviour {
 	void Update () {
 
 		if (scoreIncreasing) {
-			scoreCount += pointsPerSecond * Time.deltaTime;
+			darkMatterCount += pointsPerSecond * Time.deltaTime;
 		}
 
-		if (scoreCount > highScoreCount) {
-			highScoreCount = scoreCount;
-			PlayerPrefs.SetFloat ("HighScore", highScoreCount);
+		if (darkMatterCount > highDistanceCount) {
+			highDistanceCount = darkMatterCount;
+			PlayerPrefs.SetFloat ("HighScore", highDistanceCount);
 		}
 
-		scoreText.text = "Score: " + Mathf.Round(scoreCount);
-		highScoreText.text = "High Score: " + Mathf.Round(highScoreCount);
+		scoreText.text = "Score: " + Mathf.Round(darkMatterCount);
+		highScoreText.text = "High Score: " + Mathf.Round(highDistanceCount);
 
 	}
 
 	public void AddScore (int pointsToAdd) {
-		scoreCount += pointsToAdd;
+		darkMatterCount += pointsToAdd;
 	}
 
 }

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 
 	public PlayerController thePlayer;
 	public DeathMenu theDeathScreen;
+	public FinishMenu theFinishScreen;
 
 	public bool increaseScoreByTime;
 
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour {
 		theScoreManager.scoreIncreasing = increaseScoreByTime;
 
 		theDeathScreen.gameObject.SetActive (false);
-
+		theFinishScreen.gameObject.SetActive (false);
 	}
 
 	public void RestartGame() {
@@ -47,6 +48,8 @@ public class GameManager : MonoBehaviour {
 
 	public void Reset() {
 		theDeathScreen.gameObject.SetActive (false);
+		theFinishScreen.gameObject.SetActive (false);
+		Time.timeScale = 1;
 
 		platformList = FindObjectsOfType <ObjectDestroyer>();
 		for (int i = 0; i < platformList.Length; i++) {
@@ -57,7 +60,7 @@ public class GameManager : MonoBehaviour {
 		thePlayer.transform.position = playerStartPoint;
 		thePlayer.gameObject.SetActive (true);
 
-		theScoreManager.scoreCount = 0;
+		theScoreManager.darkMatterCount = 0;
 
 		if (increaseScoreByTime) {
 			theScoreManager.scoreIncreasing = true;
