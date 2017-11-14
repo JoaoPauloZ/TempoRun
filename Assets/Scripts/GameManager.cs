@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour {
 	private ObjectDestroyer[] platformList;
 
 	private ScoreManager theScoreManager;
-	private BackgroundManager theBackgroundManager;
+	private InfinityScrolling[] theInfinityScrollings;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour {
 		playerStartPoint = thePlayer.transform.position;
 
 		theScoreManager = FindObjectOfType<ScoreManager> ();
-		theBackgroundManager = FindObjectOfType<BackgroundManager> ();
+		theInfinityScrollings = FindObjectsOfType<InfinityScrolling> ();
 
 		theScoreManager.scoreIncreasing = increaseScoreByTime;
 
@@ -66,7 +66,9 @@ public class GameManager : MonoBehaviour {
 			theScoreManager.scoreIncreasing = true;
 		}
 
-		theBackgroundManager.RestartBackgroundPosition ();
+		foreach (InfinityScrolling item in theInfinityScrollings) {
+			item.RestartBackgroundPosition ();
+		}
 	}
 
 	/*
