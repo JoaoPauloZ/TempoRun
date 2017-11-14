@@ -4,9 +4,13 @@ public class InfinityScrolling : MonoBehaviour {
 
 	public Transform firstBackground;
 	public Transform secondBackground;
-	public Transform thePlayer;
 
 	public float backgraundWidth;
+	public float parallaxSpeed;
+
+	private Transform cameraTransform;
+	private float firstCameraX;
+	private float lastCameraX;
 
 	private Vector3 firstBackgroundStartPosition;
 	private Vector3 secondBackgroundStartPosition;
@@ -15,6 +19,9 @@ public class InfinityScrolling : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		cameraTransform = Camera.main.transform;
+		lastCameraX = cameraTransform.position.x;
+		firstCameraX = cameraTransform.position.x;
 		firstBackgroundStartPosition = firstBackground.position;
 		secondBackgroundStartPosition = secondBackground.position;
 	}
@@ -23,7 +30,11 @@ public class InfinityScrolling : MonoBehaviour {
 	void Update () {
 		Transform auxBackground1, auxBackground2;
 
-		if (thePlayer.position.x > secondBackground.position.x - 4 && !switched) {
+		float deltaX = cameraTransform.position.x - lastCameraX;
+		transform.position += Vector3.right * (deltaX * parallaxSpeed);
+		lastCameraX = cameraTransform.position.x;
+
+		if (cameraTransform.position.x > secondBackground.position.x && !switched) {
 			firstBackground.position = new Vector3 (secondBackground.position.x + backgraundWidth, secondBackground.position.y, 0);
 
 			auxBackground1 = secondBackground;
@@ -34,7 +45,7 @@ public class InfinityScrolling : MonoBehaviour {
 
 			switched = true;
 
-		} else if (thePlayer.position.x > secondBackground.position.x - 4) {
+		} else if (cameraTransform.position.x > secondBackground.position.x) {
 			switched = false;
 		}
 
@@ -43,5 +54,6 @@ public class InfinityScrolling : MonoBehaviour {
 	public void RestartBackgroundPosition() {
 		firstBackground.position = firstBackgroundStartPosition;
 		secondBackground.position = secondBackgroundStartPosition;
+		lastCameraX = firstCameraX;
 	}
 }
