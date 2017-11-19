@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour {
 	private ScoreManager theScoreManager;
 	private InfinityScrolling[] theInfinityScrollings;
 
+	public MoveOnEditorPath enemy;
+	public EditPathScript path;
+
 	// Use this for initialization
 	void Start () {
 		platformStartPoint = platformGenerator.position;
@@ -69,6 +72,10 @@ public class GameManager : MonoBehaviour {
 		foreach (InfinityScrolling item in theInfinityScrollings) {
 			item.RestartBackgroundPosition ();
 		}
+
+		enemy.CurrentWayPointID = 0;
+		path.path_objs.Clear ();
+		enemy.transform.position = playerStartPoint;
 	}
 
 	/*

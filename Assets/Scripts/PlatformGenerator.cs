@@ -31,6 +31,10 @@ public class PlatformGenerator : MonoBehaviour {
 	//private GameObject theRealPortal;
 	private ScoreManager theScoreManager;
 
+	public EditPathScript PathToFollow;
+
+	Transform[] theArray;
+
 	// Use this for initialization
 	void Start () {
 		//platformWidth = thePlatform.GetComponent<BoxCollider2D> ().size.x;
@@ -87,6 +91,21 @@ public class PlatformGenerator : MonoBehaviour {
 			}
 
 			transform.position = new Vector3 (transform.position.x + (platformWidths[platformSelector] / 2), heightChange, transform.position.z);
+
+			Transform cloneTransform;
+
+			cloneTransform = Instantiate (newPlatform.transform);
+			PathToFollow.path_objs.Add  (cloneTransform);
+
+			/* Se fizer assim ele cria terian sem estarem associados a uma plataforma. ver uma forma de fazer o caminho mais suave.
+			 * theArray = newPlatform.GetComponentsInChildren<Transform> ();
+			foreach (Transform path_obj in theArray) {
+				if (path_obj != newPlatform.transform) {
+					print ("Foreach: " + path_obj);
+					cloneTransform = Instantiate (path_obj);
+
+				}
+			}*/
 
 		}
 
