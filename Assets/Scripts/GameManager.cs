@@ -13,15 +13,15 @@ public class GameManager : MonoBehaviour {
 
 	public bool increaseScoreByTime;
 
+	public MoveOnEditorPath enemy;
+	public EditPathScript path;
+
 	private Vector3 playerStartPoint;
 
 	private ObjectDestroyer[] platformList;
 
 	private ScoreManager theScoreManager;
 	private InfinityScrolling[] theInfinityScrollings;
-
-	public MoveOnEditorPath enemy;
-	public EditPathScript path;
 
 	// Use this for initialization
 	void Start () {
@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour {
 		enemy.CurrentWayPointID = 0;
 		path.path_objs.Clear ();
 		enemy.transform.position = playerStartPoint;
+
 	}
 
 	/*

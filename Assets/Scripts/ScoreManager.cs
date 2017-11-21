@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
 
 	public Text scoreText;
-	public Text highScoreText;
+	//public Text highScoreText;
 
 	public float darkMatterCount;
 	public float darkMatterMax;
@@ -20,9 +20,9 @@ public class ScoreManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (PlayerPrefs.HasKey("HighScore")) {
-			highDistanceCount = PlayerPrefs.GetFloat ("HighScore");
-		}
+		//if (PlayerPrefs.HasKey("HighScore")) {
+		//	highDistanceCount = PlayerPrefs.GetFloat ("HighScore");
+		//}
 	}
 	
 	// Update is called once per frame
@@ -32,13 +32,20 @@ public class ScoreManager : MonoBehaviour {
 			darkMatterCount += pointsPerSecond * Time.deltaTime;
 		}
 
-		if (darkMatterCount > highDistanceCount) {
-			highDistanceCount = darkMatterCount;
-			PlayerPrefs.SetFloat ("HighScore", highDistanceCount);
+		//if (darkMatterCount > highDistanceCount) {
+		//	highDistanceCount = darkMatterCount;
+		//	PlayerPrefs.SetFloat ("HighScore", highDistanceCount);
+		//}
+
+		float count = Mathf.Round (darkMatterCount);
+
+		if (count < 10) {
+			scoreText.text = "0" + count + "/" + darkMatterMax;
+		} else {
+			scoreText.text = count + "/" + darkMatterMax;
 		}
 
-		scoreText.text = "Score: " + Mathf.Round(darkMatterCount);
-		highScoreText.text = "High Score: " + Mathf.Round(highDistanceCount);
+		//highScoreText.text = "High Score: " + Mathf.Round(highDistanceCount);
 
 	}
 
