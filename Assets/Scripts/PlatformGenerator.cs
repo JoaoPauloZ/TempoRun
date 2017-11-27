@@ -33,7 +33,7 @@ public class PlatformGenerator : MonoBehaviour {
 
 	public EditPathScript PathToFollow;
 
-	Transform[] theArray;
+	public GameObject FirstPlatform;
 
 	// Use this for initialization
 	void Start () {
@@ -51,6 +51,16 @@ public class PlatformGenerator : MonoBehaviour {
 		theCoinGenerator = FindObjectOfType<CoinGenerator> ();
 
 		theScoreManager = FindObjectOfType<ScoreManager> ();
+
+		float x = FirstPlatform.transform.position.x;
+		float y = FirstPlatform.transform.position.y;
+		float z = FirstPlatform.transform.position.z;
+
+		PathToFollow.path_objs.Add  (new Vector3(x-7f, y + 1.5f, z));
+
+		PathToFollow.path_objs.Add  (new Vector3(x, y + 1.5f, z));
+
+		PathToFollow.path_objs.Add  (new Vector3(x+7.4f, y + 1.75f, z));
 
 	}
 	
@@ -81,6 +91,10 @@ public class PlatformGenerator : MonoBehaviour {
 			newPlatform.transform.rotation = transform.rotation;
 			newPlatform.SetActive (true);
 
+			float x = transform.position.x;
+			float y = transform.position.y;
+			float z = transform.position.z;
+
 			if (Random.Range (0f, 100f) < randomCoinTreshold) {
 				theCoinGenerator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1.5f, transform.position.z));
 			}
@@ -92,20 +106,23 @@ public class PlatformGenerator : MonoBehaviour {
 
 			transform.position = new Vector3 (transform.position.x + (platformWidths[platformSelector] / 2), heightChange, transform.position.z);
 
-			Transform cloneTransform;
-
-			cloneTransform = Instantiate (newPlatform.transform);
-			PathToFollow.path_objs.Add  (cloneTransform);
-
-			/* Se fizer assim ele cria terian sem estarem associados a uma plataforma. ver uma forma de fazer o caminho mais suave.
-			 * theArray = newPlatform.GetComponentsInChildren<Transform> ();
-			foreach (Transform path_obj in theArray) {
-				if (path_obj != newPlatform.transform) {
-					print ("Foreach: " + path_obj);
-					cloneTransform = Instantiate (path_obj);
-
-				}
-			}*/
+			if (platformSelector == 0) {
+				PathToFollow.path_objs.Add (new Vector3 (x - 1.3f, y + 1.75f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x, y + 1.5f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x + 1.4f, y + 1.75f, z));
+			} else if (platformSelector == 1) {
+				PathToFollow.path_objs.Add (new Vector3 (x - 2.5f, y + 1.75f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x, y + 1.5f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x + 2.5f, y + 1.75f, z));
+			} else if (platformSelector ==	2) {
+				PathToFollow.path_objs.Add (new Vector3 (x - 6.1f, y + 1.75f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x, y + 1.5f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x + 6.4f, y + 1.75f, z));
+			} else if (platformSelector ==	3) {
+				PathToFollow.path_objs.Add (new Vector3 (x - 7f, y + 1.75f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x, y + 1.5f, z));
+				PathToFollow.path_objs.Add (new Vector3 (x + 7.4f, y + 1.75f, z));
+			}
 
 		}
 

@@ -5,7 +5,8 @@ using UnityEngine;
 public class EditPathScript : MonoBehaviour {
 
 	public Color rayColor = Color.white;
-	public List<Transform> path_objs = new List<Transform>();
+	public List<Vector3> path_objs = new List<Vector3>();
+	public List<Quaternion> path_objsQ = new List<Quaternion>();
 	Transform[] theArray;
 
 	void OnDrawGizmos (){
@@ -19,9 +20,9 @@ public class EditPathScript : MonoBehaviour {
 		}*/
 
 		for (int i = 0; i < path_objs.Count; i++) {
-			Vector3 position = path_objs [i].position;
+			Vector3 position = path_objs [i];
 			if (i > 0) {
-				Vector3 previous = path_objs [i - 1].position;
+				Vector3 previous = path_objs [i - 1];
 				Gizmos.DrawLine (previous,  position);
 				Gizmos.DrawWireSphere (position, 0.3f);
 			}

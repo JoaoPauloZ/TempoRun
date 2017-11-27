@@ -293,6 +293,7 @@ MonoBehaviour:
   increaseScoreByTime: 0
   enemy: {fileID: 505894855}
   path: {fileID: 1716424042}
+  FirstPlatform: {fileID: 0}
 --- !u!4 &508997681
 Transform:
   m_ObjectHideFlags: 0
@@ -777,6 +778,7 @@ MonoBehaviour:
   maxHeightChange: 2
   randomCoinTreshold: 65
   PathToFollow: {fileID: 1716424042}
+  FirstPlatform: {fileID: 1289060159}
 --- !u!4 &1097497143
 Transform:
   m_ObjectHideFlags: 0
@@ -877,6 +879,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1289060159 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1205231158226072, guid: 86f6de604db54ec45ac37b68f1938d09,
+    type: 2}
+  m_PrefabInternal: {fileID: 853695464}
 --- !u!114 &1298103116 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114448467140965564, guid: 8e06028b95430a640a0db818bcf60af2,
@@ -1009,6 +1016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayColor: {r: 1, g: 1, b: 1, a: 1}
   path_objs: []
+  path_objsQ: []
 --- !u!1001 &1755512595
 Prefab:
   m_ObjectHideFlags: 0
@@ -1174,11 +1182,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4854123864637520, guid: 085147605ba74dc4b9f8823a85567b77, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.82
+      value: -8.82
       objectReference: {fileID: 0}
     - target: {fileID: 4854123864637520, guid: 085147605ba74dc4b9f8823a85567b77, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.18
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4854123864637520, guid: 085147605ba74dc4b9f8823a85567b77, type: 2}
       propertyPath: m_LocalPosition.z

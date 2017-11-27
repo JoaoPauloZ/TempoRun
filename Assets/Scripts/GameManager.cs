@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
 
 	private ScoreManager theScoreManager;
 	private InfinityScrolling[] theInfinityScrollings;
+	public GameObject FirstPlatform;
 
 	// Use this for initialization
 	void Start () {
@@ -76,6 +77,16 @@ public class GameManager : MonoBehaviour {
 		enemy.CurrentWayPointID = 0;
 		path.path_objs.Clear ();
 		enemy.transform.position = playerStartPoint;
+
+		float x = FirstPlatform.transform.position.x;
+		float y = FirstPlatform.transform.position.y;
+		float z = FirstPlatform.transform.position.z;
+
+		path.path_objs.Add  (new Vector3(x-5.3f, y + 1.5f, z));
+
+		path.path_objs.Add  (new Vector3(x, y + 1.5f, z));
+
+		path.path_objs.Add  (new Vector3(x+5.4f, y + 1.75f, z));
 
 	}
 
