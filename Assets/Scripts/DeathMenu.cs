@@ -6,7 +6,8 @@ public class DeathMenu : MonoBehaviour {
 	public string mainMenuLevel;
 
 	public void RestartGame() {
-		FindObjectOfType<GameManager> ().Reset ();
+		SceneManager.LoadScene ("Endless");
+		//FindObjectOfType<GameManager> ().Reset ();
 	}
 
 	public void QuitToMain() {

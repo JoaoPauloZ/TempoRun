@@ -27,8 +27,8 @@ public class MoveOnEditorPath : MonoBehaviour {
 			float distance = Vector3.Distance (PathToFollow.path_objs [CurrentWayPointID], transform.position);
 			transform.position = Vector3.MoveTowards (transform.position, PathToFollow.path_objs [CurrentWayPointID], Time.fixedDeltaTime * speed);
 
-			var rotation = Quaternion.LookRotation (PathToFollow.path_objs [CurrentWayPointID] - transform.position);
-			transform.rotation = Quaternion.Slerp (transform.rotation, rotation, Time.deltaTime * rotationSpeed);
+			//var rotation = Quaternion.LookRotation (PathToFollow.path_objs [CurrentWayPointID] - transform.position);
+			//transform.rotation = Quaternion.Slerp (transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 
 			if (distance <= reachDistance && CurrentWayPointID < PathToFollow.path_objs.Count - 1) {
 				CurrentWayPointID++;		

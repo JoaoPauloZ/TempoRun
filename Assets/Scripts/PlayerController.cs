@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
 	public Transform groundCheck;
 	public float groundCheckRadius;
 
+	public MoveOnEditorPath enemy;
+
 	private Rigidbody2D myRigidbody;
 	//private Collider2D myCollider;
 
@@ -60,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 			speedIncreaseMilestone += speedIncreaseMilestone * speedMultiplier;
 			speedMilestoneCount += speedIncreaseMilestone;
 			moveSpeed = moveSpeed * speedMultiplier;
-			 
+			enemy.speed = moveSpeed - (moveSpeed * 0.15f);
 		}
 
 		myRigidbody.velocity = new Vector2 (moveSpeed, myRigidbody.velocity.y);
@@ -103,9 +105,11 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
+		
 		if (other.gameObject.tag == "KillBox") {
 			theGameManager.RestartGame ();
 			moveSpeed = moveSpeedStore;
+			enemy.speed = 4.43f;
 			speedMilestoneCount = speedMilestoneCountStore;
 			speedIncreaseMilestone = speedIncreaseMilestoneStore;
 			deathSound.Play ();
